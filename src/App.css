@@ -31,10 +31,17 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   /* width:calc(100vw / 5); */
   border-radius: 4px;
   width:200px;
   /* -height:300px; */
+}
+.box-body{
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  bottom:10px;
 }
 .box p{
   padding-top:0.3rem;
@@ -80,6 +87,7 @@ body{
   padding:10px;
   width:20%;
   display: inline-block;
+  margin-top:10px;
   /* float:left; */
 
 }
