@@ -49,7 +49,7 @@ const Cart = forwardRef((props,ref)=>{
                             <p>Total:</p>
                             <p>${total.toFixed(2)}</p>
                         </div>
-                        <center><button className="checkout-btn">Checkout</button></center></span>}
+                        <p className="checkout-btn" style={{'textAlign':'center','cursor':'pointer'}}>Checkout</p></span>}
                     </div>
                 </React.Fragment>
         )
