@@ -7,10 +7,8 @@ import './App.css';
 
 const App = ()=>{
   const cartRef = useRef(null);
-  // console.log(childRef.current)
   const [data,setData] = useState('')
   const [shirtsize,setSize] = useState('ALL')
-  // const [cartData,setCartData] = useState([])
   const [filtereddata,setFilteredData] = useState([])
 
   useEffect(()=>{
@@ -65,7 +63,7 @@ const App = ()=>{
   return (
     <div className="container">
       <Cart ref={cartRef} removeFromCartRef = {removeFromCart}/>
-      {data === '' ? <center><div>loading....</div></center> : 
+      {data === '' ? <div><p style={{'textAlign':'center'}}>loading....</p></div> : 
       <div>
         <Filters changeButtonStatus={changeButtonStatus} />
         <ShowProducts data={filtereddata} handleAddToCart={handleAddToCart}/>
